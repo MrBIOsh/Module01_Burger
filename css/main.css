@@ -165,18 +165,13 @@ header {
     margin: 0 auto;
 }
 
-.banner {
+.banner-box {    
     background-image: url(../img/bg/bg-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;    
-    background-position: center center;
-    max-width: 1180px;
+    background-position: center center;    
     margin: 140px auto 100px;
-    height: 438px;
-}
-
-.banner-box {    
-    padding: 51px 0 119px 85px;
+    padding: 51px 0px 119px 100px;
 }
 
 .banner-title {
