@@ -217,3 +217,114 @@ header {
     font-size: 14px;
     font-weight: 700;
 }
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 37px;
+}
+
+.menu-title {
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1b2a49;
+    margin: 0;
+}
+
+.menu-select {
+    border: 1px solid #dedede;
+    padding: 13px 29px;
+    border-radius: 22px;
+    color: #443737;
+    font-size: 15px;
+    appearance: none;
+    line-height: 1.1;
+    letter-spacing: 0.3px;
+    flex-basis: 278px;
+    background-image: url(../img/chevron-down.svg);
+    background-repeat: no-repeat;
+    background-position: 89.5% center;
+    background-size: 12.79px 7.75px;
+    margin-top: 2px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 50px;
+    gap: 20px;
+}
+
+.menu-grid-cover {
+    width: 100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 23px;
+}
+
+.menu-grid-cover img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width: 100%;
+    height: 430px;
+}
+
+.menu-grid-item {
+    text-align: center;
+}
+
+.menu-grid-title {
+    color: #1b2a49;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.menu-grid-price {
+    color: #979797;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    margin-top: 0;
+}
+
+.menu-grid-btn {
+    position: relative;
+    background-color: #FBB731;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 36px;  
+    margin-bottom: 30px;  
+}
+
+.menu-grid-icon {    
+    position: absolute;
+    display: inline-block;
+    background-image: url(../img/menu-cart.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    left: 28px;
+}
+
+.menu-grid-text {    
+    color: #1E2F40;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 21px;
+}
+
+.additional {
+    margin-top: 72px;
+}
