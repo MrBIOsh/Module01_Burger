@@ -298,10 +298,16 @@ header {
 .menu-grid-btn {
     position: relative;
     background-color: #FBB731;
-    border: none;
+    border: 1px solid #FBB731;
     border-radius: 5px;
     padding: 10px 36px;  
     margin-bottom: 30px;  
+}
+
+.menu-grid-btn:hover {
+    border: 1px solid #FBB731;
+    background-color: #fff;
+    cursor: pointer;
 }
 
 .menu-grid-icon {    
