@@ -248,6 +248,7 @@ header {
     background-position: 89.5% center;
     background-size: 12.79px 7.75px;
     margin-top: 2px;
+    outline: none;
 }
 
 .menu-grid {
