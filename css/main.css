@@ -22,10 +22,11 @@ header {
     padding-bottom: 23px;    
 }
 
-nav {
-    top: 2px;
-    position: relative;
-    left: -47px;
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 68.65%;
 }
 
 .header-logo {
@@ -225,9 +226,15 @@ nav {
     color: #1E2F40;
     background-color: #FBB731;
     border-radius: 5px;
-    padding: 20px 25px;
+    padding: 18px 23px;
     font-size: 14px;
     font-weight: 700;
+    border: 1px solid #FBB731;
+}
+
+.banner-link:hover {
+    background-color: transparent;
+    color: #fff;
 }
 
 .menu-header {
@@ -318,7 +325,7 @@ nav {
 
 .menu-grid-btn:hover {
     border: 1px solid #FBB731;
-    background-color: #fff;
+    background-color: transparent;
     cursor: pointer;
 }
 
@@ -458,4 +465,8 @@ h3 {
     font-size: 20px;
     font-weight: 800;
     color: #FBB731;
+}
+
+.footer-tel a:hover {
+    color: #fff;
 }
