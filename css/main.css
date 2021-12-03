@@ -274,7 +274,8 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 50px;
-    grid-column-gap: 20px;    
+    grid-column-gap: 20px;  
+    margin-bottom: 103px;  
 }
 
 .menu-grid-cover {
@@ -349,8 +350,7 @@ header {
     margin-left: 21px;
 }
 
-.additional {
-    margin-top: 103px;
+.additional .menu-grid {    
     margin-bottom: 140px;
 }
 
