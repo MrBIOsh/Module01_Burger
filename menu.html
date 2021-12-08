@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/main.css">    
 </head>
 <body>
-    <header>
+    <header id="headerTop">
         <div class="container">
             <div class="header">                                
                 <div class="header-item">
@@ -55,11 +55,11 @@
                     </h2>
                     <p class="banner-text">Только при покупке 3-х и более позиций,<br>
                         мы дарим скидку. Акции не суммируются.</p>
-                    <a href="#" class="banner-link">купить сейчас</a>
+                    <a href="#menuBurger" class="banner-link">купить сейчас</a>
                 </div>
             </div>
         </div>
-        <section class="menu">
+        <section class="menu" id="menuBurger">
             <div class="container">
                 <div class="menu-header">
                     <h2 class="menu-title">
@@ -230,5 +230,53 @@
             </div>                    
         </div>        
     </footer>   
+    <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
+    <script>
+        
+        // Smooth Scroll
+
+        const links = document.querySelectorAll(".banner-link");
+
+        for (const link of links) {
+        link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+
+        document.querySelector(href).scrollIntoView({
+            behavior: "smooth"
+            });
+        }
+
+        // Button Up
+
+        window.onscroll = function(){scrollFunction()};
+
+        const upbuttons = document.querySelectorAll(".button-up");
+
+        for (const upbutton of upbuttons) {
+            upbutton.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+
+        document.querySelector(href).scrollIntoView({
+            behavior: "smooth"
+            });
+        }
+
+        function scrollFunction(){
+            if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
+                document.getElementById('btnUp').className = 'button-up visible';
+            } else {
+                document.getElementById('btnUp').className = 'button-up hidden';
+            }
+        }
+
+    </script>
 </body>
 </html>
