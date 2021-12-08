@@ -1,48 +1,191 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Burger</title>
+    <title>Menu Burger</title>    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">    
 </head>
 <body>
-    <div class="wrap">
-        <div class="wrapper">
-            <div class="text">
-                <h1 class="text-title">
-                    <span>работаем с 11:00 до 22:00</span>
-                    Лучшие бургеры</h1>
-                <p>Закажи наши фирменные бургеры или собери что-то своё, а&nbsp;наши&nbsp;курьеры доставят за&nbsp;30&nbsp;минут</p>
-                <a href="main.html">заказать</a>
-            </div>
-            <div class="visual">
-                <div class="visual-bg"></div>
-                <img src="img/burger.png" alt="burger">                
+    <header>
+        <div class="container">
+            <div class="header">                                
+                <div class="header-item">
+                    <a href="main.html" class="header-logo"></a>
+                    <nav>
+                        <ul class="header-nav">
+                            <li><a href="main.html">Главная</a></li>
+                            <li><a href="menu.html" class="active">Меню</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>                    
+                    </nav>
+                </div>
+                <button type="button" class="button">
+                    <span class="button-item">
+                        <img src="img/cart.svg" alt="корзина">
+                        <span class="button-count">5</span>
+                    </span>
+                    <span class="button-text">$125</span>
+                </button>
             </div>            
+    </header>
+    <div class="bg-menu">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="menu.html">Меню</a></li>
+            </ul>
+            <h1 class="title">Наше Меню</h1>
+            <p class="description">Выбирай из предложенного ассортимента и мы доставим блюдо в течении часа</p>
         </div>
     </div>
     <main>
-        <div class="promo">
-            <div class="wrapper">
-                <div class="promo-left">
-                    <p class="promo-left-sale">Скидка</p>
-                    <p class="promo-left-cost">-20%</p>
-                    <p class="promo-left-description">При заказе на 3х и более персон мы делаем скидки, а также предоставляем скидки именинникам</p>
-                </div>
-                <div class="promo-right">
-                    <p class="promo-right-free">Бесплатно</p>
-                    <p class="promo-right-description">При заказе на сумму 500 рублей и более - доставляем бесплатно</p>
-                    <a href="main.html">заказать</a>
+        <div class="banner">
+            <div class="container">
+                <div class="banner-box">
+                    <h2 class="banner-title">
+                        <span>скидка</span>
+                        -30%
+                    </h2>
+                    <p class="banner-text">Только при покупке 3-х и более позиций,<br>
+                        мы дарим скидку. Акции не суммируются.</p>
+                    <a href="#" class="banner-link">купить сейчас</a>
                 </div>
             </div>
         </div>
-    </main>    
+        <section class="menu">
+            <div class="container">
+                <div class="menu-header">
+                    <h2 class="menu-title">
+                        Бургеры
+                    </h2>
+                    <select class="menu-select">
+                        <option value="">Сортировать</option>
+                        <option value="up">По возратанию</option>
+                        <option value="down">По убыванию</option>
+                    </select>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-grid-item">
+                        <div class="menu-grid-cover">
+                            <img src="img/menu-grid/img-1.jpg" alt="Острый бургер">
+                        </div>
+                        <p class="menu-grid-title">Острый бургер</p>
+                        <p class="menu-grid-price">$26</p>
+                        <button type="button" class="menu-grid-btn">
+                            <span class="menu-grid-icon"></span>
+                            <span class="menu-grid-text">купить</span>
+                        </button>
+                    </div>
+                    <div class="menu-grid-item">
+                        <div class="menu-grid-cover">
+                            <img src="img/menu-grid/img-2.jpg" alt="Гриль Бургер">
+                        </div>
+                        <p class="menu-grid-title">Гриль Бургер</p>
+                        <p class="menu-grid-price">$16</p>
+                        <button type="button" class="menu-grid-btn">
+                            <span class="menu-grid-icon"></span>
+                            <span class="menu-grid-text">купить</span>
+                        </button>
+                    </div>
+                    <div class="menu-grid-item">
+                        <div class="menu-grid-cover">
+                            <img src="img/menu-grid/img-3.jpg" alt="Бурег Гигант">
+                        </div>
+                        <p class="menu-grid-title">Бурег Гигант</p>
+                        <p class="menu-grid-price">$37</p>
+                        <button type="button" class="menu-grid-btn">
+                            <span class="menu-grid-icon"></span>
+                            <span class="menu-grid-text">купить</span>
+                        </button>
+                    </div>
+                    <div class="menu-grid-item">
+                        <div class="menu-grid-cover">
+                            <img src="img/menu-grid/img-4.jpg" alt="Бургер с курицей">
+                        </div>
+                        <p class="menu-grid-title">Бургер с курицей</p>
+                        <p class="menu-grid-price">$18</p>
+                        <button type="button" class="menu-grid-btn">
+                            <span class="menu-grid-icon"></span>
+                            <span class="menu-grid-text">купить</span>
+                        </button>
+                    </div>
+                    <div class="menu-grid-item">
+                        <div class="menu-grid-cover">
+                            <img src="img/menu-grid/img-5.jpg" alt="Бургер с курицей">
+                        </div>
+                        <p class="menu-grid-title">Бургер с курицей</p>
+                        <p class="menu-grid-price">$9</p>
+                        <button type="button" class="menu-grid-btn">
+                            <span class="menu-grid-icon"></span>
+                            <span class="menu-grid-text">купить</span>
+                        </button>
+                    </div>
+                    <div class="menu-grid-item">
+                        <div class="menu-grid-cover">
+                            <img src="img/menu-grid/img-6.jpg" alt="Тройной бурегр">
+                        </div>
+                        <p class="menu-grid-title">Тройной бурегр</p>
+                        <p class="menu-grid-price">$7</p>
+                        <button type="button" class="menu-grid-btn">
+                            <span class="menu-grid-icon"></span>
+                            <span class="menu-grid-text">купить</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="additional">
+            <div class="container">
+                <div class="menu-header">
+                    <h2 class="menu-title">
+                        Дополнительно
+                    </h2>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-grid-item">
+                        <div class="menu-grid-cover">
+                            <img src="img/menu-grid/additional/img-1.jpg" alt="Сэндвич">
+                        </div>
+                        <p class="menu-grid-title">Сэндвич</p>
+                        <p class="menu-grid-price">$3</p>
+                        <button type="button" class="menu-grid-btn">
+                            <span class="menu-grid-icon"></span>
+                            <span class="menu-grid-text">купить</span>
+                        </button>
+                    </div>
+                    <div class="menu-grid-item">
+                        <div class="menu-grid-cover">
+                            <img src="img/menu-grid/additional/img-2.jpg" alt="Картошка Фри">
+                        </div>
+                        <p class="menu-grid-title">Картошка Фри</p>
+                        <p class="menu-grid-price">$5</p>
+                        <button type="button" class="menu-grid-btn">
+                            <span class="menu-grid-icon"></span>
+                            <span class="menu-grid-text">купить</span>
+                        </button>
+                    </div>
+                    <div class="menu-grid-item">
+                        <div class="menu-grid-cover">
+                            <img src="img/menu-grid/additional/img-3.jpg" alt="Хот-Дог">
+                        </div>
+                        <p class="menu-grid-title">Хот-Дог</p>
+                        <p class="menu-grid-price">$7</p>
+                        <button type="button" class="menu-grid-btn">
+                            <span class="menu-grid-icon"></span>
+                            <span class="menu-grid-text">купить</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="container">
             <div class="footer-box">
@@ -50,7 +193,7 @@
                 <div class="footer-box-links">
                         <h3>Основные ссылки</h3>
                         <ul class="footer-main-links">
-                            <li><a href="main.html">Меню</a></li>
+                            <li><a href="menu.html">Меню</a></li>
                             <li><a href="#">Заказ и Доставка</a></li>
                             <li><a href="#">Методы оплаты</a></li>
                             <li><a href="#">Контакты</a></li>
@@ -86,6 +229,6 @@
                 </div>                  
             </div>                    
         </div>        
-    </footer>
+    </footer>   
 </body>
 </html>
