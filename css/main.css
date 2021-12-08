@@ -486,15 +486,15 @@ h3 {
     color: #FAF9F9;
     flex: 0 0 580px;
     padding-top: 170px;
-    padding-bottom: 171px;
+    padding-bottom: 168px;
 }
 
 .text-title {
     font-size: 120px;
     font-weight: 800;
     text-transform: uppercase;
-    line-height: 120px;
-    margin-bottom: 40px;
+    line-height: 140.5px;
+    margin-bottom: 32px;
     margin-top: 0px;
 }
 
@@ -504,7 +504,7 @@ h3 {
     font-weight: 700;
     line-height: 38px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .text p {
@@ -513,8 +513,10 @@ h3 {
     line-height: 1.4;
     font-weight: 400;
     color: #DEDEDE;
-    margin-bottom: 42px;
+    margin-bottom: 48px;
     margin-top: 0px;
+    padding-left: 1px;
+    letter-spacing: -0.6px;
 }
 
 .wrap a,
@@ -523,7 +525,7 @@ h3 {
     background-color: #FBB731;
     border-radius: 5px;
     text-decoration: none;
-    padding: 22px 45px;
+    padding: 20.5px 47px;
     display: inline-block;
     text-transform: uppercase;
     font-size: 14px;
@@ -558,12 +560,17 @@ h3 {
 }
 
 .promo {
-    padding: 186px 0;
+    padding: 185px 0;
+}
+
+.promo > .wrapper {
+    padding-left: 0px;
+    padding-right: 19px;
 }
 
 .promo-left,
 .promo-right {
-    flex: 0 0 49%;
+    flex: 0 0 49.15%;
     color: #fff;
     box-sizing: border-box;
     background-repeat: no-repeat;
@@ -578,28 +585,26 @@ h3 {
 
 .promo-right {
     background-image: url(../img/promo-right.png);
-    padding: 102px 50px;
+    padding: 101px 50px;
 }
 
 .promo-left-sale {
     font-size: 14px;
     font-weight: 900;
     background: #F37335;
-    padding: 6px 19px;
+    padding: 6px 20px;
     border-radius: 14px;
     display: inline-block;
     text-transform: uppercase;
-    margin-bottom: 3px;
-    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 2px;
 }
 
 .promo-left-cost {
     font-size: 60px;
     font-weight: 900;
-    margin-bottom: 8px;
-    margin-top: 0px;
-    padding-top: 8px;
-    padding-bottom: 5px;
+    margin-bottom: 11px;
+    margin-top: 6px;
 }
 
 .promo-left-description, .promo-right-description {
@@ -612,18 +617,18 @@ h3 {
 
 .promo-left-description {
     max-width: 392px;
+    letter-spacing: -0.35px;
 }
 
 .promo-right-description {
     max-width: 310px;
     margin-bottom: 20px;
+    letter-spacing: -0.35px;
 }
 
 .promo-right-free {
     font-size: 44px;
     font-weight: 700;
-    margin-bottom: 10px;
-    margin-top: 0px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    margin-bottom: 12px;
+    margin-top: 5px;
 }
