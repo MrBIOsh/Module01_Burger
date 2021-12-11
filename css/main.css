@@ -514,6 +514,8 @@ h3 {
 
 .wrapper {
     max-width: 1180px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -590,9 +592,13 @@ h3 {
     background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
 }
 
-.wrap img {
+.img-burger img {
     width: 829px;
     height: 861px;
+}
+    
+
+.img-burger {
     position: absolute;
     right: -168px;
 }
@@ -747,6 +753,164 @@ h3 {
 
     .footer-item .footer-tel li:first-child {
         margin-bottom: 0px;
-    }
+    }    
     
+}
+
+
+/* ------------------ ADAPTIVE INDEX.HTML ------------------ */
+
+
+@media (min-width: 770px) and (max-width: 1516px) {
+
+    /* ------------------ HEADER INDEX.HTML ------------------ */
+
+    .wrapper {
+        max-width: 77.5vw;
+    }
+
+    .text {
+        flex: 0 0 324px;
+        padding-top: 11.2vw;
+        padding-bottom: 11vw;
+    }
+
+    .text-title {
+        font-size: 8vw;
+        line-height: 9.2vw;
+        margin-bottom: 2.1vw;
+    }
+
+    .text-title span {
+        font-size: 2vw;
+        line-height: 2.52vw;
+        margin-bottom: 0.8vw;
+    }
+
+    .text p {
+        font-size: 1.25vw;
+        line-height: 1.75vw;
+        letter-spacing: -0.04vw;
+        margin-bottom: 3.17vw;
+    }
+
+    .wrap a, .promo a {
+        padding: 1.35vw 3.1vw;
+        font-size: 0.93vw;
+    }
+
+    .visual-bg {
+        width: 28.5vw;
+    }
+
+    .img-burger { 
+        overflow: hidden;
+        left: -5vw;
+        width: 140%;
+        height: 100%;
+    }
+
+    .img-burger img {
+        width: 54.5vw;
+        height: 56vw;
+        object-fit: cover;
+    }
+
+    /* ------------------ MAIN INDEX.HTML ------------------ */
+
+    .promo {
+
+    }
+
+    .promo-left {
+        
+    }
+
+}
+
+@media (max-width: 769px) {
+
+    .promo {
+        padding: 106px 15px 140px;
+    }
+
+    .promo-left {
+        padding: 43px 30px 67px;
+    }
+
+    .promo-right {
+        padding: 53px 30px 47px;
+    }
+
+    .promo > .wrapper {
+        padding-right: 0px;
+    }
+
+    .promo-right-free {
+        margin-top: 10px;
+    }
+
+    .promo-right-description {
+        margin-bottom: 15px;
+    }
+
+    .wrap .wrapper {
+        overflow: hidden;
+    }
+        
+    .wrapper {
+        max-width: 768px;        
+    }
+
+    .text {
+        padding-top: 37px;
+        padding-left: 14px;
+        max-width: 417px;
+        padding-bottom: 123px;
+    }
+
+    .text-title {
+        font-size: 86px;
+        line-height: 100px;
+        margin-bottom: 23px;
+    }
+
+    .text-title span {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+    .text p {
+        font-size: 14px;
+        letter-spacing: -0.5px;
+        margin-bottom: 34px;
+    }
+
+    .wrap a, .promo a {
+        padding: 17px 40px;
+        font-size: 13px;
+    }
+
+    .visual {
+        position: static;
+    }
+
+    .visual-bg {
+        width: 25.8vw;
+    }
+
+    .img-burger { 
+        overflow: hidden;
+        left: 35.6vw;
+        width: 64.4vw;
+        height: 81vw;
+        top: 15.6vw;
+    }
+
+    .img-burger img {
+        width: 64.4vw;
+        height: 66.7vw;
+        object-fit: cover;
+        object-position: 121px;
+    }
 }
