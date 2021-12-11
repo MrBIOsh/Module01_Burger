@@ -510,6 +510,7 @@ h3 {
 
 .wrap {
     background: linear-gradient(180deg, #0C4C7B -100%, #1E2F40 100%);
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -592,13 +593,9 @@ h3 {
     background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
 }
 
-.img-burger img {
+.wrap img {
     width: 829px;
     height: 861px;
-}
-    
-
-.img-burger {
     position: absolute;
     right: -168px;
 }
@@ -764,7 +761,7 @@ h3 {
 @media (min-width: 770px) and (max-width: 1516px) {
 
     /* ------------------ HEADER INDEX.HTML ------------------ */
-
+/*
     .wrapper {
         max-width: 77.5vw;
     }
@@ -815,7 +812,7 @@ h3 {
         height: 56vw;
         object-fit: cover;
     }
-
+*/
     /* ------------------ MAIN INDEX.HTML ------------------ */
 
     .promo {
@@ -828,8 +825,8 @@ h3 {
 
 }
 
-@media (max-width: 769px) {
-
+@media (max-width: 1000px) {
+/*
     .promo {
         padding: 106px 15px 140px;
     }
@@ -912,5 +909,5 @@ h3 {
         height: 66.7vw;
         object-fit: cover;
         object-position: 121px;
-    }
+    }*/
 }
