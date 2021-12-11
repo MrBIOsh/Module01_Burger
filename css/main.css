@@ -594,10 +594,11 @@ h3 {
 }
 
 .wrap img {
-    width: 829px;
-    height: 861px;
+    width: 653px;
+    height: 669px;
     position: absolute;
-    right: -168px;
+    right: -78px;
+    top: 136px;
 }
 
 .promo {
@@ -910,4 +911,50 @@ h3 {
         object-fit: cover;
         object-position: 121px;
     }*/
+}
+
+@media (max-width: 1200px) {
+    .visual-bg {
+        width: 36vw;
+    }
+
+    .wrap img {
+        width: 54.4vw;
+        height: 55.75vw;
+        right: -6.5vw;
+        top: 11.33vw;
+    }
+
+    .text {
+        padding-top: 14.16vw;
+        padding-bottom: 14vw;        
+        flex: 0 0 48.33vw;
+    }
+    
+    .text-title {
+        font-size: 10vw;
+        line-height: 11.7vw;
+        margin-bottom: 2.66vw;
+    }
+    
+    .text-title span {
+        font-size: 2.5vw;
+        line-height: 3.16vw;
+        margin-bottom: 1vw;
+    }
+    
+    .text p {
+        font-size: 1.58vw;
+        line-height: 1.86vw;
+        margin-bottom: 4vw;
+        padding-left: 0.083vw;
+        letter-spacing: -0.05vw;
+    }
+    
+    .wrap a,
+    .promo a {
+        border-radius: 5px;
+        padding: 1.71vw 3.92vw;
+        font-size: 1.16vw;
+}
 }
