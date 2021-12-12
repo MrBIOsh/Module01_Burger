@@ -969,6 +969,7 @@ h3 {
 
     .additional .container {
         padding-right: 0px;
+        padding-left: 0px;
     }
 
     .additional .menu-header {
@@ -983,6 +984,10 @@ h3 {
 
     .additional .menu-grid-item {
         flex: 0 0 137px;
+    }
+
+    .additional .menu-grid-item:first-child {
+        padding-left: 15px;
     }
 
     .additional .menu-grid-item:last-child {
@@ -1034,10 +1039,6 @@ h3 {
 }
 
 @media (max-width: 360px) {
-
-    .container {
-        max-width: 290px;
-    }
 
     .menu-select {
         font-size: 12px;
