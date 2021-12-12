@@ -273,6 +273,7 @@ header {
     background-repeat: no-repeat;
     background-position: 89.5% center;
     background-size: 12.79px 7.75px;
+    background-color: #fff;
     margin-top: 2px;
     outline: none;
 }
@@ -1165,7 +1166,7 @@ h3 {
     }
 
     .promo-left {
-        padding: 67px 30px;
+        padding: 43px 30px;
     }
 
     .promo-right {
