@@ -976,6 +976,11 @@ h3 {
         margin-bottom: 36px;
     }
 
+    .additional .menu-title {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .additional .menu-grid {
         margin-bottom: 61px;
         padding-bottom: 77px;
