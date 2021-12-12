@@ -508,9 +508,13 @@ h3 {
 
 /*----------------    MAIN PAGE    --------------------*/
 
+.header-main {
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
 .wrap {
     background: linear-gradient(180deg, #0C4C7B -100%, #1E2F40 100%);
-    overflow-x: hidden;
 }
 
 .wrapper {
@@ -604,12 +608,12 @@ h3 {
 .promo {
     padding: 185px 0;
 }
-
+/*
 .promo > .wrapper {
     padding-left: 0px;
     padding-right: 19px;
 }
-
+*/
 .promo-left,
 .promo-right {
     flex: 0 0 49.15%;
@@ -747,171 +751,18 @@ h3 {
 
     .footer-item-list + .footer-tel {
         display: block;
+        margin-top: 9px;
     }
 
     .footer-item .footer-tel li:first-child {
-        margin-bottom: 0px;
+        margin-bottom: 3px;
     }    
     
 }
 
 
-/* ------------------ ADAPTIVE INDEX.HTML ------------------ */
+/* ------------------ ADAPTIVE FOR TABLET INDEX.HTML ------------------ */
 
-
-@media (min-width: 770px) and (max-width: 1516px) {
-
-    /* ------------------ HEADER INDEX.HTML ------------------ */
-/*
-    .wrapper {
-        max-width: 77.5vw;
-    }
-
-    .text {
-        flex: 0 0 324px;
-        padding-top: 11.2vw;
-        padding-bottom: 11vw;
-    }
-
-    .text-title {
-        font-size: 8vw;
-        line-height: 9.2vw;
-        margin-bottom: 2.1vw;
-    }
-
-    .text-title span {
-        font-size: 2vw;
-        line-height: 2.52vw;
-        margin-bottom: 0.8vw;
-    }
-
-    .text p {
-        font-size: 1.25vw;
-        line-height: 1.75vw;
-        letter-spacing: -0.04vw;
-        margin-bottom: 3.17vw;
-    }
-
-    .wrap a, .promo a {
-        padding: 1.35vw 3.1vw;
-        font-size: 0.93vw;
-    }
-
-    .visual-bg {
-        width: 28.5vw;
-    }
-
-    .img-burger { 
-        overflow: hidden;
-        left: -5vw;
-        width: 140%;
-        height: 100%;
-    }
-
-    .img-burger img {
-        width: 54.5vw;
-        height: 56vw;
-        object-fit: cover;
-    }
-*/
-    /* ------------------ MAIN INDEX.HTML ------------------ */
-
-    .promo {
-
-    }
-
-    .promo-left {
-        
-    }
-
-}
-
-@media (max-width: 1000px) {
-/*
-    .promo {
-        padding: 106px 15px 140px;
-    }
-
-    .promo-left {
-        padding: 43px 30px 67px;
-    }
-
-    .promo-right {
-        padding: 53px 30px 47px;
-    }
-
-    .promo > .wrapper {
-        padding-right: 0px;
-    }
-
-    .promo-right-free {
-        margin-top: 10px;
-    }
-
-    .promo-right-description {
-        margin-bottom: 15px;
-    }
-
-    .wrap .wrapper {
-        overflow: hidden;
-    }
-        
-    .wrapper {
-        max-width: 768px;        
-    }
-
-    .text {
-        padding-top: 37px;
-        padding-left: 14px;
-        max-width: 417px;
-        padding-bottom: 123px;
-    }
-
-    .text-title {
-        font-size: 86px;
-        line-height: 100px;
-        margin-bottom: 23px;
-    }
-
-    .text-title span {
-        font-size: 22px;
-        margin-bottom: 5px;
-    }
-
-    .text p {
-        font-size: 14px;
-        letter-spacing: -0.5px;
-        margin-bottom: 34px;
-    }
-
-    .wrap a, .promo a {
-        padding: 17px 40px;
-        font-size: 13px;
-    }
-
-    .visual {
-        position: static;
-    }
-
-    .visual-bg {
-        width: 25.8vw;
-    }
-
-    .img-burger { 
-        overflow: hidden;
-        left: 35.6vw;
-        width: 64.4vw;
-        height: 81vw;
-        top: 15.6vw;
-    }
-
-    .img-burger img {
-        width: 64.4vw;
-        height: 66.7vw;
-        object-fit: cover;
-        object-position: 121px;
-    }*/
-}
 
 @media (max-width: 1200px) {
     .visual-bg {
@@ -932,20 +783,20 @@ h3 {
     }
     
     .text-title {
-        font-size: 10vw;
+        font-size: 10vmax;
         line-height: 11.7vw;
         margin-bottom: 2.66vw;
     }
     
     .text-title span {
-        font-size: 2.5vw;
+        font-size: 2.5vmax;
         line-height: 3.16vw;
         margin-bottom: 1vw;
     }
     
     .text p {
-        font-size: 1.58vw;
-        line-height: 1.86vw;
+        font-size: 1.58vmax;
+        line-height: 2.3vw;
         margin-bottom: 4vw;
         padding-left: 0.083vw;
         letter-spacing: -0.05vw;
@@ -954,7 +805,85 @@ h3 {
     .wrap a,
     .promo a {
         border-radius: 5px;
-        padding: 1.71vw 3.92vw;
-        font-size: 1.16vw;
+        padding: 1.71vmax 3.92vmax;
+        font-size: 1.16vmax;
+    }
 }
+
+@media (max-width: 1112px) {
+
+    .wrapper {
+        max-width: 738px;
+    }
+
+    .text {
+        padding-top: 42px;
+        padding-bottom: 122px;
+        padding-left: 13px;
+        flex: 0 0 411px;
+    }
+
+    .text-title {
+        font-size: 86px;
+        line-height: 1.17;
+        margin-bottom: 21px;
+    }
+
+    .text-title span {
+        font-size: 22px;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+
+    .text p {
+        font-size: 14px;
+        line-height: 1.45;
+        margin-bottom: 33px;
+    }
+
+    .wrap a,
+    .promo a {
+        font-size: 13px;
+        padding: 17px 40px;
+    }
+
+    .visual-bg {
+        width: 198px;
+    }
+
+    .wrap img {
+        width: 389px;
+        height: 400px;
+        top: 200px;
+        right: -82px;
+    }
+
+    .promo {
+        padding-top: 57px;
+        padding-bottom: 141px;
+    }
+
+    .promo-left {
+        padding: 43px 30px;
+    }
+
+    .promo-right {
+        padding: 58px 31px;
+        background-position: -49px center;
+    }
+
+    .promo-right-free {
+        margin-top: 6px;
+    }
+
+    .promo-right-description {
+        margin-bottom: 14px;
+    }
+
+}
+
+/* ------------------ ADAPTIVE FOR MOBILE MENU.HTML ------------------ */
+
+@media (max-width: 736px) {
+
 }
