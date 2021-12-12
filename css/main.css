@@ -608,12 +608,7 @@ h3 {
 .promo {
     padding: 185px 0;
 }
-/*
-.promo > .wrapper {
-    padding-left: 0px;
-    padding-right: 19px;
-}
-*/
+
 .promo-left,
 .promo-right {
     flex: 0 0 49.15%;
@@ -679,10 +674,66 @@ h3 {
     margin-top: 5px;
 }
 
-/*----------------    RESPONSIVE    --------------------*/
+/* --------------- MODAL ------------------- */
+
+.burger {
+    width: 34px;
+    height: 22px;
+    background-color: transparent;
+    background-image: url(../img/menu.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+
+#modal {
+    max-width: 500px;
+    background-color: cornsilk;
+    text-align: center;
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 0;
+    margin: 20px auto 0;
+    transition: 0.5s;
+    padding: 40px 30px;
+    box-sizing: border-box;
+}
+
+#modal .header-nav {
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.burger-close {
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    background-image: url(../img/close.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+
+/*----------------    ADAPTIVE FOR TABLET MENU.HTML    --------------------*/
 
 @media (min-width: 1001px) {
     .footer-item-list + .footer-tel {
+        display: none;
+    }
+}
+
+@media (min-width: 766px) {
+    .header-burger {
         display: none;
     }
 }
@@ -760,55 +811,251 @@ h3 {
     
 }
 
+/* ------------------ ADAPTIVE FOR MOBILE MENU.HTML ------------------ */
 
-/* ------------------ ADAPTIVE FOR TABLET INDEX.HTML ------------------ */
+@media (max-width: 765px) {
+    nav {
+        display: none ;
+    }    
 
-
-@media (max-width: 1200px) {
-    .visual-bg {
-        width: 36vw;
-    }
-
-    .wrap img {
-        width: 54.4vw;
-        height: 55.75vw;
-        right: -6.5vw;
-        top: 11.33vw;
-    }
-
-    .text {
-        padding-top: 14.16vw;
-        padding-bottom: 14vw;        
-        flex: 0 0 48.33vw;
-    }
-    
-    .text-title {
-        font-size: 10vmax;
-        line-height: 11.7vw;
-        margin-bottom: 2.66vw;
-    }
-    
-    .text-title span {
-        font-size: 2.5vmax;
-        line-height: 3.16vw;
-        margin-bottom: 1vw;
-    }
-    
-    .text p {
-        font-size: 1.58vmax;
-        line-height: 2.3vw;
-        margin-bottom: 4vw;
-        padding-left: 0.083vw;
-        letter-spacing: -0.05vw;
-    }
-    
-    .wrap a,
-    .promo a {
-        border-radius: 5px;
-        padding: 1.71vmax 3.92vmax;
-        font-size: 1.16vmax;
+    .header-item {
+        flex-basis: 28.5%;    
+        gap: 21px;
     }
 }
+
+@media (max-width: 601px) {
+
+    footer {
+        height: 100%;
+    }
+
+    .footer-box {
+        display: grid;
+        grid-template-columns: 1fr 278px;
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    .footer-item:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        align-self: flex-start;
+    }
+
+    .footer-item:nth-child(3) {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+    }
+
+    .footer-item-list + .footer-tel {
+        display: none;
+    }
+
+    .footer-item:first-child {
+        order: -1;
+    }
+
+    .footer-item:last-child {
+        display: block;
+        order: -1;
+        justify-self: center;
+    }
+
+}
+
+@media (max-width: 567px) {
+
+    .header {
+        padding-top: 20px;
+        padding-bottom: 19px;
+        gap: 44px;
+    }
+
+    .bg-menu {
+        padding: 57px 0;
+    }
+
+    .title {
+        font-size: 38px;
+        margin-top: 12px;
+        margin-bottom: 11px;
+    }
+
+    .breadcrumbs {
+        margin-bottom: 27px;
+        margin-top: 0px;
+        gap: 4px;
+    }
+
+    .breadcrumbs a {
+        font-size: 14px;
+        padding-right: 3px;
+    }
+
+    .description {
+        font-size: 12px;
+        max-width: 264px;
+    }
+
+    .banner-box {
+        background-position: 20% center;
+        padding: 34px 22px 55px 24px;
+        margin-top: 33px;
+        margin-bottom: 35px;
+    }
+
+    .banner-title {
+        margin-top: 2px;
+    }
+
+    .menu-header {
+        gap: 28px;
+        margin-bottom: 31px;
+    }
+
+    .menu-title {
+        font-size: 27px;
+    }    
+
+    .menu-select {
+        font-size: 12px;
+    }
+
+    .menu-grid {
+        gap: 23px 12px;
+        margin-bottom: 62px;
+    }
+
+    .menu-grid-cover {
+        height: 180px;        
+        margin-bottom: 9px;
+    }
+
+    .menu-grid-cover img {
+        height: 180px;
+    }
+
+    .menu-grid-title {
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .menu-grid-price {
+        font-size: 16px;        
+        margin-bottom: 12px;
+    }
+
+    .menu-grid-btn {
+        padding: 9px 24px;
+    }
+
+    .menu-grid-icon {
+        left: 20px;
+    }
+
+    .menu-select {
+        padding: 13px 13px;
+    }
+
+    .additional {
+        height: 408px;
+    }
+
+    .additional .container {
+        padding-right: 0px;
+    }
+
+    .additional .menu-header {
+        margin-bottom: 36px;
+    }
+
+    .additional .menu-grid {
+        margin-bottom: 61px;
+        padding-bottom: 77px;
+        gap: 7px;
+    }
+
+    .additional .menu-grid-item {
+        flex: 0 0 137px;
+    }
+
+    .additional .menu-grid-item:last-child {
+        padding-right: 15px;
+    }
+
+    .additional .menu-grid-cover, 
+    .additional .menu-grid-cover img {
+        height: 180px;
+    }
+
+    .additional .menu-grid-cover img {
+        width: 139px;
+    }
+
+    .footer-box {
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        align-items: center;
+        gap: 0px 47px;
+    }
+
+    .footer-item:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+    }
+
+    .footer-item:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+    }
+
+    .footer-item-list + .footer-tel {
+        display: none;
+    }
+
+    .footer-item:first-child {
+        order: -1;
+    }
+
+    .footer-item:last-child {
+        display: block;
+        order: -1;
+        justify-self: right;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .container {
+        max-width: 290px;
+    }
+
+    .menu-select {
+        font-size: 12px;
+        padding: 13px 13px;
+        background-position: 91.5% center;
+    }
+
+    .additional .menu-grid-item {
+        flex: 0 0 137px;
+    }
+
+    .header-logo {
+        width: 116px;
+        height: 37px;
+    }    
+}
+
+
+/* ------------------ ADAPTIVE FOR TABLET INDEX.HTML ------------------ */
 
 @media (max-width: 1112px) {
 
@@ -882,8 +1129,72 @@ h3 {
 
 }
 
-/* ------------------ ADAPTIVE FOR MOBILE MENU.HTML ------------------ */
+/* ------------------ ADAPTIVE FOR MOBILE INDEX.HTML ------------------ */
 
 @media (max-width: 736px) {
+    .header-main {
+        padding-bottom: 0px;
+        overflow: unset;
+    }
+
+    .header-main .wrapper {
+        display: block;
+    }
+
+    .text {
+        max-width: 420px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 50px;
+        padding-left: 0px;
+    }
+
+    .visual {
+        display: none;
+    }
+
+    .promo {
+        padding: 50px 0;
+    }
+
+    .promo .wrapper {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .promo-left {
+        padding: 67px 30px;
+    }
+
+    .promo-right {
+        padding: 58px 30px;
+    }
+
+    .promo-left, .promo-right {
+        width: 95%;        
+        background-position: 0px center;
+    }
+
+    .promo-left-description {
+        max-width: 375px;
+    }
 
 }
+
+@media (max-width: 480px) {
+
+    .wrapper {
+        max-width: 320px;
+    }
+
+    .text-title {
+        font-size: 58px;
+    }
+
+    .text-title span {
+        font-size: 16px;
+    }
+}
+
