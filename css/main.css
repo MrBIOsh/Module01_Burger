@@ -784,7 +784,7 @@ h3 {
         width: auto;
         overflow-x: scroll;
         overflow-y: hidden;
-        padding-bottom: 140px;
+        padding-bottom: 150px;
     }
 
     .additional .menu-grid-item {
@@ -828,7 +828,7 @@ h3 {
     }
 }
 
-@media (max-width: 601px) {
+@media (max-width: 630px) {
 
     footer {
         height: 100%;
@@ -867,12 +867,16 @@ h3 {
     .footer-item:last-child {
         display: block;
         order: -1;
-        justify-self: center;
+        justify-self: right;
     }
 
 }
 
 @media (max-width: 567px) {
+
+    .container {
+        max-width: 567px;
+    }
 
     .header {
         padding-top: 20px;
@@ -936,12 +940,12 @@ h3 {
     }
 
     .menu-grid-cover {
-        height: 180px;        
+        height: 56.3vw;        
         margin-bottom: 9px;
     }
 
     .menu-grid-cover img {
-        height: 180px;
+        height: 56.3vw;
     }
 
     .menu-grid-title {
@@ -967,12 +971,8 @@ h3 {
     }
 
     .additional {
-        height: 408px;
-    }
-
-    .additional .container {
-        padding-right: 0px;
-        padding-left: 0px;
+        height: 127.35vw;
+        position: relative;
     }
 
     .additional .menu-header {
@@ -980,31 +980,24 @@ h3 {
     }
 
     .additional .menu-title {
-        padding-left: 15px;
-        padding-right: 15px;
+      /*  padding-left: 15px;
+        padding-right: 15px;*/
     }
 
     .additional .menu-grid {
         margin-bottom: 61px;
-        padding-bottom: 77px;
-        gap: 7px;
+        padding-bottom: 42vw;
+        gap: 6px;
     }
 
     .additional .menu-grid-item {
-        flex: 0 0 221px;
-    }
-
-    .additional .menu-grid-item:first-child {
-        padding-left: 15px;
-    }
-
-    .additional .menu-grid-item:last-child {
-        padding-right: 15px;
+        flex: 0 0 43.44vw;;
     }
 
     .additional .menu-grid-cover, 
     .additional .menu-grid-cover img {
-        height: 180px;
+        height: 56.25vw;
+        width: 43.44vw;
     }
 
     .footer-box {
@@ -1050,20 +1043,38 @@ h3 {
         background-position: 91.5% center;
     }
 
-    .additional .menu-grid-item {
-        flex: 0 0 137px;
-    }
-
     .header-logo {
         width: 116px;
         height: 37px;
     }    
 }
 
+@media (max-width: 320px) {        
+
+    .additional > .container {
+        max-width: 320px;
+        overflow: hidden;
+    }
+
+    .additional_wrapper {
+        max-width: 320px;
+        position: absolute;
+        left: 0px;
+    }
+
+    .additional .menu-grid-item:first-child {
+        padding-left: 15px;
+    }
+
+    .additional .menu-grid-item:last-child {
+        padding-right: 15px;
+    }
+}
+
 
 /* ------------------ ADAPTIVE FOR TABLET INDEX.HTML ------------------ */
 
-@media (max-width: 1112px) {
+@media (max-width: 1112px) {    
 
     .wrapper {
         max-width: 738px;
