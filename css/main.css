@@ -830,6 +830,21 @@ h3 {
 
 @media (max-width: 630px) {
 
+    /*
+    .additional_wrapper {
+        max-width: 630px;
+        position: absolute;
+        left: 0px;
+    }
+
+    .additional .menu-grid-item:first-child {
+        padding-left: 15px;
+    }
+
+    .additional .menu-grid-item:last-child {
+        padding-right: 15px;
+    }*/
+
     footer {
         height: 100%;
     }
