@@ -121,7 +121,7 @@ header {
     text-align: center;
     background-image: url(../img/bg/our-menu.jpg);    
     background-size: cover;
-    padding: 142px 0 141px 0;
+    padding: 127px 0 141px 0;
     background-position: center center;    
 }
 
@@ -129,7 +129,6 @@ header {
     display: flex;
     list-style-type: none;
     justify-content: center;
-    margin-top: 2px;
     margin-bottom: 17px;
     padding-left: 0;
     gap: 8px;
@@ -186,14 +185,15 @@ header {
     background-repeat: no-repeat;    
     background-position: 0 center;    
     margin: 140px auto 83px;
-    padding: 51px 0px 119px 100px;
+    padding: 101px 100px 119px;
 }
 
 .banner-title {
     color: #fff;
     font-size: 60px;
     font-weight: 900;
-    margin-bottom: 0px
+    margin-bottom: 0px;
+    margin-top: 0px;
     
 }
 
@@ -214,7 +214,7 @@ header {
 
 .banner-text {
     font-family: 'Open Sans', sans-serif;
-    max-width: 353px;
+    max-width: 325px;
     color: #FAF9F9;
     font-size: 15px;
     font-weight: 400;
@@ -1020,7 +1020,7 @@ h3 {
         grid-template-columns: 0.2fr 1fr;
         grid-template-rows: repeat(3, 1fr);
         align-items: center;
-        gap: 0px 47px;
+        gap: 10px 20px;
     }
 
     .footer-item:nth-child(2) {
