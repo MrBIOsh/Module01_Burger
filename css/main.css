@@ -1044,6 +1044,10 @@ h3 {
 }
 
 @media (max-width: 360px) {
+    
+    h3 {
+        font-size: 18px;
+    }
 
     .menu-select {
         font-size: 12px;
