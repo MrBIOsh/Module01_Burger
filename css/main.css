@@ -459,14 +459,6 @@ h3 {
     margin-top: 4px;
 }
 
-/*.footer-item-list li:nth-child(1) {
-    margin-bottom: 15px;
-}*/
-
-.footer-item:last-child {
-    margin-right: 5px;
-}
-
 .footer-item .footer-tel a {    
     text-decoration: none;
     font-size: 20px;
@@ -826,24 +818,17 @@ h3 {
         flex-basis: 28.5%;    
         gap: 21px;
     }
-}
 
-@media (max-width: 630px) {
-
-    /*
-    .additional_wrapper {
-        max-width: 630px;
-        position: absolute;
-        left: 0px;
-    }
-
-    .additional .menu-grid-item:first-child {
-        padding-left: 15px;
+    .additional .container {
+        padding-right: 0;
     }
 
     .additional .menu-grid-item:last-child {
         padding-right: 15px;
-    }*/
+    }
+}
+
+@media (max-width: 630px) {
 
     footer {
         height: 100%;
@@ -883,6 +868,12 @@ h3 {
         display: block;
         order: -1;
         justify-self: right;
+    }
+
+    .footer-tel {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
     }
 
 }
@@ -994,11 +985,6 @@ h3 {
         margin-bottom: 36px;
     }
 
-    .additional .menu-title {
-      /*  padding-left: 15px;
-        padding-right: 15px;*/
-    }
-
     .additional .menu-grid {
         margin-bottom: 61px;
         padding-bottom: 42vw;
@@ -1018,15 +1004,21 @@ h3 {
     .footer-box {
         display: grid;
         grid-template-columns: 0.2fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 0.5fr 1fr 1fr;
         align-items: center;
-        gap: 10px 20px;
+        gap: 38px 20px;
+    }
+
+    .footer-item:nth-child(2) h3,
+    .footer-item:nth-child(3) h3 {
+        font-size: 18px;
     }
 
     .footer-item:nth-child(2) {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 2;
+        line-height: 1.5;
     }
 
     .footer-item:nth-child(3) {
@@ -1039,14 +1031,15 @@ h3 {
         display: none;
     }
 
-    .footer-item:first-child {
-        order: -1;
-    }
-
     .footer-item:last-child {
         display: block;
-        order: -1;
         justify-self: right;
+    }
+
+    .footer-item:first-child,
+    .footer-item:last-child {
+        order: -1;
+        padding-top: 60px;
     }
 }
 
@@ -1079,10 +1072,6 @@ h3 {
 
     .additional .menu-grid-item:first-child {
         padding-left: 15px;
-    }
-
-    .additional .menu-grid-item:last-child {
-        padding-right: 15px;
     }
 }
 
