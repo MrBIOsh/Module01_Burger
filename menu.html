@@ -32,10 +32,10 @@
                     <a href="index.html" class="header-logo"></a>
                     <nav>
                         <ul class="header-nav">
-                            <li><a href="index.html">Главная</a></li>
-                            <li><a href="menu.html" class="active">Меню</a></li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li class="header-item"><a class="header-link" href="index.html">Главная</a></li>
+                            <li class="header-item"><a class="header-link" href="#menuBurger">Меню</a></li>
+                            <li class="header-item"><a class="header-link" href="#">О нас</a></li>
+                            <li class="header-item"><a class="header-link" href="#footer">Контакты</a></li>
                         </ul>                    
                     </nav>
                 </div>
@@ -86,9 +86,10 @@
                     </select>
                 </div>
                 <div class="menu-grid">
-                    <div class="menu-grid-item">
+                    <div id="item1" class="menu-grid-item">
                         <div class="menu-grid-cover">
                             <img src="img/menu-grid/img-1.jpg" alt="Острый бургер">
+                            <span class="day-info">Day Info</span>
                         </div>
                         <p class="menu-grid-title">Острый бургер</p>
                         <p class="menu-grid-price">$26</p>
@@ -97,9 +98,10 @@
                             <span class="menu-grid-text">купить</span>
                         </button>
                     </div>
-                    <div class="menu-grid-item">
+                    <div id="item2" class="menu-grid-item">
                         <div class="menu-grid-cover">
                             <img src="img/menu-grid/img-2.jpg" alt="Гриль Бургер">
+                            <span class="day-info">Day Info</span>
                         </div>
                         <p class="menu-grid-title">Гриль Бургер</p>
                         <p class="menu-grid-price">$16</p>
@@ -108,9 +110,10 @@
                             <span class="menu-grid-text">купить</span>
                         </button>
                     </div>
-                    <div class="menu-grid-item">
+                    <div id="item3" class="menu-grid-item">
                         <div class="menu-grid-cover">
                             <img src="img/menu-grid/img-3.jpg" alt="Бурег Гигант">
+                            <span class="day-info">Day Info</span>
                         </div>
                         <p class="menu-grid-title">Бурег Гигант</p>
                         <p class="menu-grid-price">$37</p>
@@ -119,9 +122,10 @@
                             <span class="menu-grid-text">купить</span>
                         </button>
                     </div>
-                    <div class="menu-grid-item">
+                    <div id="item4" class="menu-grid-item">
                         <div class="menu-grid-cover">
                             <img src="img/menu-grid/img-4.jpg" alt="Бургер с курицей">
+                            <span class="day-info">Day Info</span>
                         </div>
                         <p class="menu-grid-title">Бургер с курицей</p>
                         <p class="menu-grid-price">$18</p>
@@ -130,9 +134,10 @@
                             <span class="menu-grid-text">купить</span>
                         </button>
                     </div>
-                    <div class="menu-grid-item">
+                    <div id="item5" class="menu-grid-item">
                         <div class="menu-grid-cover">
                             <img src="img/menu-grid/img-5.jpg" alt="Бургер с курицей">
+                            <span class="day-info">Day Info</span>
                         </div>
                         <p class="menu-grid-title">Бургер с курицей</p>
                         <p class="menu-grid-price">$9</p>
@@ -141,9 +146,10 @@
                             <span class="menu-grid-text">купить</span>
                         </button>
                     </div>
-                    <div class="menu-grid-item">
+                    <div id="item6" class="menu-grid-item">
                         <div class="menu-grid-cover">
                             <img src="img/menu-grid/img-6.jpg" alt="Тройной бурегр">
+                            <span class="day-info">Day Info</span>
                         </div>
                         <p class="menu-grid-title">Тройной бурегр</p>
                         <p class="menu-grid-price">$7</p>
@@ -164,9 +170,10 @@
                     </div>
                 <div class="additional_wrapper">
                     <div class="menu-grid">
-                        <div class="menu-grid-item">
+                        <div id="item7" class="menu-grid-item">
                             <div class="menu-grid-cover">
-                                <img src="img/menu-grid/additional/img-1.jpg" alt="Сэндвич">
+                                <img src="img/menu-grid/additional/img-1.jpg" alt="Сэндвич">                                
+                                <span class="day-info">Day Info</span>
                             </div>
                             <p class="menu-grid-title">Сэндвич</p>
                             <p class="menu-grid-price">$3</p>
@@ -175,9 +182,10 @@
                                 <span class="menu-grid-text">купить</span>
                             </button>
                         </div>
-                        <div class="menu-grid-item">
+                        <div id="item8" class="menu-grid-item">
                             <div class="menu-grid-cover">
-                                <img src="img/menu-grid/additional/img-2.jpg" alt="Картошка Фри">
+                                <img src="img/menu-grid/additional/img-2.jpg" alt="Картошка Фри">                                
+                                <span class="day-info">Day Info</span>
                             </div>
                             <p class="menu-grid-title">Картошка Фри</p>
                             <p class="menu-grid-price">$5</p>
@@ -186,9 +194,46 @@
                                 <span class="menu-grid-text">купить</span>
                             </button>
                         </div>
-                        <div class="menu-grid-item">
+                        <div id="item9" class="menu-grid-item">
                             <div class="menu-grid-cover">
-                                <img src="img/menu-grid/additional/img-3.jpg" alt="Хот-Дог">
+                                <img src="img/menu-grid/additional/img-3.jpg" alt="Хот-Дог">                                
+                                <span class="day-info">Day Info</span>
+                            </div>
+                            <p class="menu-grid-title">Хот-Дог</p>
+                            <p class="menu-grid-price">$7</p>
+                            <button type="button" class="menu-grid-btn">
+                                <span class="menu-grid-icon"></span>
+                                <span class="menu-grid-text">купить</span>
+                            </button>
+                        </div>
+                        <div id="item10" class="menu-grid-item">
+                            <div class="menu-grid-cover">
+                                <img src="img/menu-grid/additional/img-1.jpg" alt="Сэндвич">                                
+                                <span class="day-info">Day Info</span>
+                            </div>
+                            <p class="menu-grid-title">Сэндвич</p>
+                            <p class="menu-grid-price">$3</p>
+                            <button type="button" class="menu-grid-btn">
+                                <span class="menu-grid-icon"></span>
+                                <span class="menu-grid-text">купить</span>
+                            </button>
+                        </div>
+                        <div id="item11" class="menu-grid-item">
+                            <div class="menu-grid-cover">
+                                <img src="img/menu-grid/additional/img-2.jpg" alt="Картошка Фри">                                
+                                <span class="day-info">Day Info</span>
+                            </div>
+                            <p class="menu-grid-title">Картошка Фри</p>
+                            <p class="menu-grid-price">$5</p>
+                            <button type="button" class="menu-grid-btn">
+                                <span class="menu-grid-icon"></span>
+                                <span class="menu-grid-text">купить</span>
+                            </button>
+                        </div>
+                        <div id="item12" class="menu-grid-item">
+                            <div class="menu-grid-cover">
+                                <img src="img/menu-grid/additional/img-3.jpg" alt="Хот-Дог">                                
+                                <span class="day-info">Day Info</span>
                             </div>
                             <p class="menu-grid-title">Хот-Дог</p>
                             <p class="menu-grid-price">$7</p>
@@ -202,7 +247,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div class="footer-box">
                 <div class="footer-item">
@@ -259,10 +304,10 @@
     <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
     <div class="modal" id="modal">
         <ul class="header-nav">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="menu.html" class="active">Меню</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li class="header-item"><a class="header-link" href="index.html">Главная</a></li>
+            <li class="header-item"><a class="header-link" href="menu.html" class="active">Меню</a></li>
+            <li class="header-item"><a class="header-link" href="#">О нас</a></li>
+            <li class="header-item"><a class="header-link" href="#">Контакты</a></li>
         </ul>
         <button class="burger-close" onclick="closeModal()"></button>
     </div>
@@ -270,20 +315,23 @@
         
         // Smooth Scroll
 
-        const links = document.querySelectorAll(".banner-link");
+        document.querySelectorAll(".header-link").forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
 
-        for (const link of links) {
-        link.addEventListener("click", clickHandler);
-        }
+                let href = this.getAttribute('href').substring(1);
+        
+                const scrollTarget = document.getElementById(href);
+                const topOffset = 106;
+                const elementPosition = scrollTarget.getBoundingClientRect().top;
+                const offsetPosition = elementPosition - topOffset;
 
-        function clickHandler(e) {
-        e.preventDefault();
-        const href = this.getAttribute("href");
-
-        document.querySelector(href).scrollIntoView({
-            behavior: "smooth"
+                window.scrollBy({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
             });
-        }
+        });
 
         // Button Up
 
@@ -299,7 +347,9 @@
         e.preventDefault();
         const href = this.getAttribute("href");
 
-        document.querySelector(href).scrollIntoView({
+        window.scrollTo({
+            top: 0,
+            left: 0,
             behavior: "smooth"
             });
         }
@@ -322,5 +372,6 @@
             document.getElementById("modal").style.top = "-400px";
         }
     </script>
+    <script src="js/utils/dayInfo.js"></script>
 </body>
 </html>

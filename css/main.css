@@ -12,7 +12,11 @@ body {
 }
 
 header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
     border-bottom: 1px solid #dedede;    
+    z-index: 10;
 }
 
 .header {
@@ -22,13 +26,6 @@ header {
     justify-content: space-between;
     padding-top: 25px;
     padding-bottom: 23px;    
-}
-
-.header-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-basis: 68.65%;
 }
 
 .header-logo {
@@ -47,7 +44,14 @@ header {
     gap: 44px;
 }
 
-.header-nav a {
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 68.65%;
+}
+
+.header-link {
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -55,25 +59,16 @@ header {
     text-decoration: none;    
 }
 
-.header-nav a:hover {
+.header-link:hover {
     color: #ffc725;
 }
 
-.header-nav a::after {
+.header-link::after {
     content: '';
     width: 100%;
     height: 3px;
     border-radius: 1.5px;
     background-color: transparent;
-    display: block;
-}
-
-.header-nav a.active::after {
-    content: '';
-    width: 100%;
-    height: 3px;
-    border-radius: 1.5px;
-    background-color: #ffc725;
     display: block;
 }
 
@@ -121,7 +116,7 @@ header {
     text-align: center;
     background-image: url(../img/bg/our-menu.jpg);    
     background-size: cover;
-    padding: 127px 0 141px 0;
+    padding: 236px 0 141px 0;
     background-position: center center;    
 }
 
@@ -304,6 +299,17 @@ header {
        object-fit: cover;
     width: 100%;
     height: 430px;
+}
+
+.day-info {
+    color: #fff;
+    opacity: .7;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    text-align: left;
 }
 
 .menu-grid-item {
@@ -766,6 +772,10 @@ h3 {
         margin-bottom: 92px;
     }
 
+    .day-info {
+        font-size: 10px;
+    }
+
     .additional {
         overflow: hidden;
         height: 697px;
@@ -776,8 +786,14 @@ h3 {
         width: auto;
         overflow-x: scroll;
         overflow-y: hidden;
-        padding-bottom: 150px;
+        position: relative;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
+
+    .additional .menu-grid::-webkit-scrollbar {
+        display: none;
+      }
 
     .additional .menu-grid-item {
         flex: 0 0 274px;
@@ -891,7 +907,7 @@ h3 {
     }
 
     .bg-menu {
-        padding: 57px 0;
+        padding: 137px 0 57px;
     }
 
     .title {
@@ -950,6 +966,10 @@ h3 {
         margin-bottom: 9px;
     }
 
+    .day-info {
+        font-size: 6px;
+    }
+
     .menu-grid-cover img {
         height: 56.3vw;
     }
@@ -987,7 +1007,6 @@ h3 {
 
     .additional .menu-grid {
         margin-bottom: 61px;
-        padding-bottom: 42vw;
         gap: 6px;
     }
 
